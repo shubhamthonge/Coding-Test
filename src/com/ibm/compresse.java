@@ -1,5 +1,4 @@
 package com.ibm;
-import java.util.*;
 
 public class compresse {
     public static String properCompression(String s) {
