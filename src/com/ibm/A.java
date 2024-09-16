@@ -10,7 +10,7 @@ public class A {
 		int N = scanner.nextInt();
 		if (N % 2 == 0) {
 			System.out.println("N must be an odd number.");
-			return;
+			
 		}
 		for (int i = 1; i <= N; i++) {
 			int num = (i <= N / 2 + 1) ? i : N - i + 1;

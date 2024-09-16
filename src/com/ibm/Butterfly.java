@@ -5,7 +5,7 @@ public class Butterfly {
 	// Function to demonstrate pattern
 	public static void printPattern(int n) {
 		int i, j;
-		int num = 1;
+		//int num = 1;
 
 		// outer loop to handle upper part
 		for (i = 1; i <= n; i++) {
