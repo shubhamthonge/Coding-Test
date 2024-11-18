@@ -2,40 +2,18 @@ package com.ibm;
 
 public class Singleton{
 
-	private static Singleton singleton;
+	private static Singleton instance;
 
-	
-	
-	private Singleton(Singleton singleton) {
-		super();
-		this.singleton = singleton;
-	}
-	
+    private Singleton() {
+        // Private constructor to prevent instantiation
+    }
 
-	private Singleton() {
-		super();
-		System.out.println("Singleton constructor");
-		// TODO Auto-generated constructor stub
-	}
-
-
-	public static Singleton obj () {
-		if (singleton == null ) {
-			singleton = new Singleton();
-		}
-		
-		return singleton;
-	}
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
 	
-	public static void main(String[] args) {
-		
-		//obj();
-		System.out.println(obj());
-		System.out.println(obj());
-		System.out.println(obj());
-		System.out.println(obj());
-		Singleton s= new Singleton();
-		
-	}
 	
 }
